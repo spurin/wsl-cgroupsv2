@@ -16,7 +16,7 @@ After updating check your WSL version by running -
 wsl --version
 ```
 
-You should be on a version equal or greater than `WSL version: 1.2.5.0` and `Kernel version: 5.15.90.1`
+I recommend being on a version equal or greater than `WSL version: 1.2.5.0` and `Kernel version: 5.15.90.1`
 
 ### Configure WSL to use cgroupsv2
 

@@ -93,6 +93,8 @@ And again, restart WSL -
 wsl --shutdown
 ```
 
+*You may need to restart Docker Desktop manually after this stage*
+
 ### Check your configuration
 
 With WSL updated, and the latest version of Docker Desktop installed and WSL using the docker-desktop distro, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -

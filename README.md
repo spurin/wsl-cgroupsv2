@@ -79,7 +79,7 @@ Install the latest version of Docker Desktop, this process has been tested and i
 
 ### Check your configuration
 
-With WSL updated, and the latest version of Docker Desktop installed and WSL using the docker-desktop distro, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
+With WSL updated, and the latest version of Docker Desktop installed, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
 
 ```
 % docker run -it --rm spurin/wsl-cgroupsv2:latest

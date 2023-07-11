@@ -93,7 +93,7 @@ And again, restart WSL -
 wsl --shutdown
 ```
 
-*You may need to restart Docker Desktop manually after this stage*
+*You may need to restart Docker Desktop after restarting wsl with `wsl --shutdown`*
 
 ### Check your configuration
 

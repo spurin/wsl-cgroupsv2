@@ -86,4 +86,4 @@ If you see tmpfs or another value, please re-check the configuration above.
 
 ### Thanks
 
-Thanks to @nunix @mark-duggan and @geoffreybaldry for support in troubleshooting Kubernetes in a container and modifying WSL 🚀
+Thanks to [@nunix](https://github.com/nunix) [@mark-duggan](https://github.com/mark-duggan) and [@geoffreybaldry](https://github.com/geoffreybaldry) for support in troubleshooting Kubernetes in a container in Windows and modifying WSL 🚀

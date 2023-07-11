@@ -67,7 +67,6 @@ if ($wslSectionExists -and $lineExists) {
     Write-Output "The configuration has been set. Shutting down WSL..."
     wsl --shutdown
 }
-
 ```
 
 ### Update Docker Desktop

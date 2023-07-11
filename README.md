@@ -77,11 +77,15 @@ Install the latest version of Docker Desktop, this process has been tested and k
 
 By default, after installing Docker Desktop it will be using the WSL distribution of docker-desktop, you can check this by executing -
 
-```wsl -l -v```
+```
+wsl -l -v
+```
 
 If it is not, you can set this by executing -
 
-```wsl --setdefault docker-desktop```
+```
+wsl --setdefault docker-desktop
+```
 
 ### Check your configuration
 

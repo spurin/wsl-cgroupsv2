@@ -81,7 +81,7 @@ Install the latest version of Docker Desktop, this process has been tested and k
 With WSL updated, and the latest version of Docker Desktop installed, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
 
 ```
-% docker run -it --rm spurin/check-cgroupsv2:latest
+% docker run -it --rm spurin/wsl-cgroupsv2:latest
 Success: cgroup type is cgroup2fs
 ```
 

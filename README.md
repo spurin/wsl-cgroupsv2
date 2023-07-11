@@ -71,7 +71,7 @@ if ($wslSectionExists -and $lineExists) {
 
 ### Update Docker Desktop
 
-Install the latest version of Docker Desktop, this process has been tested and known to work well with Docker Desktop from `v4.21.1` onwards
+Install the latest version of Docker Desktop, this process has been tested and is known to work well with Docker Desktop from `v4.21.1` onwards.
 
 ### Check your WSL Distro
 

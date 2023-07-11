@@ -26,7 +26,7 @@ A key issue emerges with the process manager, systemd, which runs on cgroupsv1 w
 
 Luckily, WSL comes with a configuration file that provides an option to set Kernel parameters. Leveraging this, we can disable cgroupsv1, thereby aligning the WSL environment with Mac OS X and modern Linux distributions.
 
-Implementing this change is straightforward. It's simply a matter of creating or editing a text file at %USERPROFILE%\.wslconfig (i.e. for my user of James, this would be C:\Users\James\.wslconfig). Specifically, you need to add the following lines:
+Implementing this change is straightforward. It's simply a matter of creating or editing a text file at `%USERPROFILE%\.wslconfig` (i.e. for my user of James, this would be `C:\Users\James\.wslconfig`). Specifically, you need to add the following lines:
 
 ```
 [wsl2]

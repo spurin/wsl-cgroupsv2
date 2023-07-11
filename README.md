@@ -2,7 +2,7 @@
 
 ### Update WSL
 
-Docker Desktop for Windows makes use of the WSL (Windows Subsystem for Linux) environment as the Linux Kernel.  For Kubernetes to work as expected within Docker Desktop, it is important to run a modern Kernel.
+Docker Desktop for Windows makes use of the WSL (Windows Subsystem for Linux) environment as the Linux Kernel.  For Kubernetes to work as expected within Docker Desktop when running within a container, it is important to run a modern Kernel.
 
 Update the version of wsl by executing the following from a Command Prompt or via Powershell, complete any steps that follow -
 

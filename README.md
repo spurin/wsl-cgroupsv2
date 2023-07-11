@@ -73,9 +73,19 @@ if ($wslSectionExists -and $lineExists) {
 
 Install the latest version of Docker Desktop, this process has been tested and known to work well with Docker Desktop from `v4.21.1` onwards
 
+### Check your WSL Distro
+
+By default, after installing Docker Desktop it will be using the WSL distribution of docker-desktop, you can check this by executing -
+
+```wsl -l -v```
+
+If it is not, you can set this by executing -
+
+```wsl --setdefault docker-desktop```
+
 ### Check your configuration
 
-With WSL updated, and the latest version of Docker Desktop installed, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
+With WSL updated, and the latest version of Docker Desktop installed and it running, the docker-desktop WSL distro, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
 
 ```
 % docker run -it --rm spurin/wsl-cgroupsv2:latest

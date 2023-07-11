@@ -35,6 +35,8 @@ kernelCommandLine = cgroup_no_v1=all systemd.unified_cgroup_hierarchy=1
 
 And then once saved, issuing a `wsl --shutdown` to restart WSL
 
+*n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`*
+
 To revert, the file can be removed or updated and again, WSL can be restarted by running `wsl --shutdown`
 
 To automate the setup of this process, the following can be pasted into a powershell prompt, this will create a backup of the file if it exists, modify/add the entry and then restart WSL -
@@ -69,7 +71,7 @@ if ($wslSectionExists -and $lineExists) {
 }
 ```
 
-*n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`
+*Again - n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`*
 
 ### Install/Update Docker Desktop
 

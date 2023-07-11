@@ -10,4 +10,4 @@ RUN apt-get update \
 # Specify a different stop signal for systemd
 STOPSIGNAL SIGRTMIN+3
 
-CMD stat -fc %T /sys/fs/cgroup/
+CMD stat -fc %T /sys/fs/cgroup/ | awk '{if ($1 == "cgroup2fs") print "Success: cgroup type is cgroup2fs"; else print "Failure: Expected cgroup type to be cgroup2fs, but got " $1}'

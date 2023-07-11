@@ -73,28 +73,6 @@ if ($wslSectionExists -and $lineExists) {
 
 Install the latest version of Docker Desktop, this process has been tested and is known to work well with Docker Desktop from `v4.21.1` onwards.
 
-### Check your WSL Distro
-
-By default, after installing Docker Desktop it will be using the WSL distribution of docker-desktop, you can check this by executing -
-
-```
-wsl -l -v
-```
-
-If it is not, you can set this by executing -
-
-```
-wsl --setdefault docker-desktop
-```
-
-And again, restart WSL -
-
-```
-wsl --shutdown
-```
-
-*You may need to restart Docker Desktop after restarting wsl with `wsl --shutdown`*
-
 ### Check your configuration
 
 With WSL updated, and the latest version of Docker Desktop installed and WSL using the docker-desktop distro, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
@@ -106,6 +84,6 @@ Success: cgroup type is cgroup2fs
 
 If you see tmpfs or another value, please re-check the configuration above.
 
-### MMV
+### Thanks
 
-Although you can run Docker Desktop with another WSL Linux Distribution, your mileage may vary.  If you're experiencing problems, please try docker-desktop as a baseline for troubleshooting purposes. 
+Thanks to @nunix @mark-duggan and @geoffreybaldry for support in troubleshooting Kubernetes in a container and modifying WSL 🚀

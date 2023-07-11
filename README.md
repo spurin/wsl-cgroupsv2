@@ -87,9 +87,15 @@ If it is not, you can set this by executing -
 wsl --setdefault docker-desktop
 ```
 
+And again, restart WSL -
+
+```
+wsl --shutdown
+```
+
 ### Check your configuration
 
-With WSL updated, and the latest version of Docker Desktop installed and it running, the docker-desktop WSL distro, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
+With WSL updated, and the latest version of Docker Desktop installed and WSL using the docker-desktop distro, run the following command from a command prompt.  It will run a container and verify that the container is using cgroupsv2 as expected -
 
 ```
 % docker run -it --rm spurin/wsl-cgroupsv2:latest
@@ -97,3 +103,7 @@ Success: cgroup type is cgroup2fs
 ```
 
 If you see tmpfs or another value, please re-check the configuration above.
+
+### MMV
+
+Although you can run Docker Desktop with another WSL Linux Distribution, your mileage may vary.  If you're experiencing problems, please try docker-desktop as a baseline for troubleshooting purposes. 

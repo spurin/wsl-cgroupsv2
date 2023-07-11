@@ -69,7 +69,9 @@ if ($wslSectionExists -and $lineExists) {
 }
 ```
 
-### Update Docker Desktop
+*n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`
+
+### Install/Update Docker Desktop
 
 Install the latest version of Docker Desktop, this process has been tested and is known to work well with Docker Desktop from `v4.21.1` onwards.
 

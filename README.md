@@ -36,7 +36,7 @@ kernelCommandLine = cgroup_no_v1=all systemd.unified_cgroup_hierarchy=1
 
 And then once saved, issuing a `wsl --shutdown` to restart WSL
 
-*n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`*
+*n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`, the Restart Popup from Docker does not always work*
 
 To revert, the file can be removed or updated and again, WSL can be restarted by running `wsl --shutdown`
 
@@ -72,7 +72,7 @@ if ($wslSectionExists -and $lineExists) {
 }
 ```
 
-*Again - n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`*
+*Again - n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`, the Restart Popup from Docker does not always work*
 
 ### Install/Update Docker Desktop
 

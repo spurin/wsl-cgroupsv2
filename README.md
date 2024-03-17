@@ -38,7 +38,7 @@ Specifically, you need to add the following lines:
 kernelCommandLine = cgroup_no_v1=all systemd.unified_cgroup_hierarchy=1
 ```
 
-When saving the file, choose Save As and update the filename so it is in double quotes as ".wslconfig" to prevent Windows adding a default .txt extension. Once saved, issue a `wsl --shutdown` to restart WSL
+To save the file, select “Save As” and rename it with double quotes, as “.wslconfig,” to avoid Windows from appending a default .txt extension automatically. After saving, execute the command `wsl --shutdown` to restart WSL.
 
 *n.b. if you were already running Docker Desktop, you may need to manually restart it after executing a `wsl --shutdown`, the Restart Popup from Docker does not always work*
 

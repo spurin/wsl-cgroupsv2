@@ -1,5 +1,10 @@
 ## Windows WSL Users
 
+> 🎉 **Great news!**
+> Since **WSL version 2.5.1**, Microsoft has made **cgroupsv2 the standard**, just like most modern Linux distributions!  
+> This means you no longer need to manually tweak wsl config files to get Docker + Kubernetes playing nicely together on Windows.  
+> Simply **update WSL**, then head straight to [Check your configuration](#check-your-configuration) ✅
+
 ### Update WSL
 
 Docker Desktop for Windows makes use of the WSL (Windows Subsystem for Linux) environment as the Linux Kernel.  For Kubernetes to work as expected within Docker Desktop when running within a container, it is important to run a modern Kernel.
@@ -17,7 +22,7 @@ After updating check your WSL version by running -
 wsl --version
 ```
 
-I recommend being on a version equal or greater than `WSL version: 1.2.5.0` and `Kernel version: 5.15.90.1`
+I recommend being on a version equal or greater than `WSL version: wsl.2.5.1` and `Kernel version: 6.6`
 
 ### Configure WSL to use cgroupsv2
 

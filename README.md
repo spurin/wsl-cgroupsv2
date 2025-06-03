@@ -24,13 +24,15 @@ wsl --version
 
 I recommend being on a version equal or greater than `WSL version: wsl.2.5.1` and `Kernel version: 6.6`
 
-### Configure WSL to use cgroupsv2
+### Configure WSL to use cgroupsv2 (only required for WSL versions before v2.5.1)
 
-Over the past three years, Linux has embarked on a transition journey towards cgroupsv2. This has become the baseline for many Linux-based distributions, and this holds true for Docker Desktop on Mac and Linux as well. However, there's a slight hitch when it comes to Windows Subsystem for Linux (WSL). By default, WSL operates in a hybrid mode that supports both cgroupsv1 and cgroupsv2. This dual support system introduces problems when running containers that utilize cgroupsv2.
+Over the years, Linux has embarked on a transition journey towards cgroupsv2. This has become the baseline for many Linux-based distributions, and this holds true for Docker Desktop on Mac and Linux as well. However, there's a slight hitch when it comes to Windows Subsystem for Linux (WSL). WSL previously operated in a hybrid mode that supported both cgroupsv1 and cgroupsv2 in WSL versions prior to v2.5.1.
 
-A key issue emerges with the process manager, systemd, which runs on cgroupsv1 while the main system is operating on cgroupsv2. This discrepancy creates numerous issues for many Kubernetes distributions. With the deprecation and withdrawal of support for cgroupsv1 on the horizon, there's a need at present to rectify this situation from a WSL standpoint to achieve consistency.
+This dual support system introduces problems when running containers that utilize cgroupsv2.
 
-Luckily, WSL comes with a configuration file that provides an option to set Kernel parameters. Leveraging this, we can disable cgroupsv1, thereby aligning the WSL environment with Mac OS X and modern Linux distributions.
+A key issue emerges with the process manager, systemd, which runs on cgroupsv1 while the main system is operating on cgroupsv2. This discrepancy creates numerous issues for many Kubernetes distributions. With the deprecation and withdrawal of support for cgroupsv1 on the horizon, there's a need to rectify this situation from a WSL standpoint to achieve consistency.
+
+Luckily, WSL comes with a configuration file that provides an option to set Kernel parameters. Leveraging this, we can disable cgroupsv1 in older versions, thereby aligning the WSL environment with modern Linux distributions.
 
 Implementing this change is straightforward. It's simply a matter of creating or editing a text file at `%USERPROFILE%\.wslconfig` (i.e. for my user of James, this would be `C:\Users\James\.wslconfig`). 
 
